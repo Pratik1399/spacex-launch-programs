@@ -1,11 +1,15 @@
-## npm install
+Available Scripts
+Following are the scripts that are available,
+To start the application
 
-Install required dependency by using npm install command.
+npm run start
+To build the application
 
-## npm run start
+npm run build
+To run the test cases
 
-Run the scripts by using npm run start command.
+npm run test
+To deploy the application on the Github.
 
-## hosted url
-
-https://spacex-launch-programs1.herokuapp.com/
+npm run deploy
+The application is deployed on and can be accessed there.
