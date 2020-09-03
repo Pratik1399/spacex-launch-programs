@@ -1,17 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import { routerMiddleware } from "react-router-redux";
+import { Router } from "react-router";
+import { Provider } from "react-redux";
+import { createStore, compose, applyMiddleware } from "redux";
+import createSagaMiddleware from "redux-saga";
+import createHistory from "history/createBrowserHistory";
+import SpaceLaunch from "./container/SpaceLaunch/SpaceLaunch";
+import sagas from "./store/sagas/sagas";
+import createRootReducers from "./store/reducers/reducers";
+import "./assets/_main.scss";
+
+export const Store = (history, initialState = {}) => {
+	const sagaMiddleware = createSagaMiddleware((initialState = {}));
+	const routeMiddleware = routerMiddleware(history);
+	const store = createStore(
+		createRootReducers(history),
+		initialState,
+		compose(applyMiddleware(sagaMiddleware, routeMiddleware))
+	);
+	sagaMiddleware.run(sagas);
+	return store;
+};
+
+const history = createHistory();
+const store = Store(history);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+	<Provider store={store}>
+		<Router history={history}>
+			<SpaceLaunch />
+		</Router>
+	</Provider>,
+	document.getElementById("root")
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
