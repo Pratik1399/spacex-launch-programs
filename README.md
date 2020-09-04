@@ -1,15 +1,36 @@
-Available Scripts
-Following are the scripts that are available,
-To start the application
+# SpaceX Launch Stats
 
+> React,Redux,Redux-Saga,Sass app that uses the SpaceX API to display launching and landing Info.
+
+## Quick Start
+
+```bash
+# create-react-app (Creates React App)
+npx create-react-app spacex-launch-programs
+
+# Install dependencies (spacex-launch-programs)
+npm install
+cd spacex-launch-programs && npm install
+
+# Server only (:3000)
 npm run start
-To build the application
 
-npm run build
-To run the test cases
+# Build for production (Builds into server ./build)
+cd spacex-launch-programs && npm run build
 
-npm run test
-To deploy the application on the Github.
+```
 
-npm run deploy
-The application is deployed on and can be accessed there.
+## App Info
+
+### Author
+
+Pratik Ghadge
+https://github.com/Pratik1399
+
+### Version
+
+1.0.0
+
+### License
+
+This project is licensed under the MIT License
