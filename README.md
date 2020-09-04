@@ -1,4 +1,4 @@
-# SpaceX Launch Stats
+# SpaceX Launch Programs
 
 > React,Redux,Redux-Saga,Sass app that uses the SpaceX API to display launching and landing Info.
 
