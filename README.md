@@ -33,6 +33,3 @@ cd spacex-launch-programs && npm run build
 
 Live site! https://spacex-launch1.herokuapp.com/
 
-## Author
-
-Pratik Ghadge
