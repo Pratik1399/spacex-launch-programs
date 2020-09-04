@@ -1,7 +1,6 @@
 # SpaceX Launch Programs
 
-> A front-end application that would help users list and browse all launches by SpaceX
-> program. By using filters it shows the statistic of launched and landed SpaceX program.
+> A front-end application that would help users list and browse all launches by SpaceX program. By using filters it shows the statistic of launched and landed SpaceX program.
 
 ## Get Started
 
