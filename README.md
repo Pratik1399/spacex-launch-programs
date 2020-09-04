@@ -1,8 +1,12 @@
 # SpaceX Launch Programs
 
-> React,Redux,Redux-Saga,Sass app that uses the SpaceX API to display launching and landing Info.
+> A front-end application that would help users list and browse all launches by SpaceX
+> program. By using filters it shows the statistic of launched and landed SpaceX program.
 
-## Quick Start
+## Get Started
+
+> Node : v11.5.0
+> npm : v6.7.0
 
 ```bash
 # create-react-app (Creates React App)
@@ -20,17 +24,16 @@ cd spacex-launch-programs && npm run build
 
 ```
 
-## App Info
+## Resources
 
-### Author
+- [NodeJS](https://nodejs.org/en/download/)
+- [create-react-app](https://create-react-app.dev/docs/getting-started)
+- [Heroku](https://www.heroku.com/)
+
+## Live Site
+
+Live site! https://spacex-launch1.herokuapp.com/
+
+## Author
 
 Pratik Ghadge
-https://github.com/Pratik1399
-
-### Version
-
-1.0.0
-
-### License
-
-This project is licensed under the MIT License
