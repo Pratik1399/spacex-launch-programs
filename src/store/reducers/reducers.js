@@ -1,7 +1,7 @@
 import { reducer as launchDataReducer } from "./launchDataReducer";
 import { combineReducers } from "redux";
 
-export default (history) =>
+export default () =>
 	combineReducers({
 		launchData: launchDataReducer,
 	});

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import * as LaunchDataActions from "../../store/actions/actions";
@@ -49,31 +49,40 @@ class SpaceLaunch extends React.Component {
 
 	render() {
 		return (
-			<div className="body">
+			<Fragment>
 				<header>
 					<h1>SpaceX Launch Programs</h1>
 				</header>
-				<div className="main row nested">
-					<article className="col col-span-10">
-						{this.props.launchData.launchLoading ? (
-							<Loader />
-						) : (
-							<SpaceXCardDetails launches={this.state.launchData} />
-						)}
-					</article>
-					<nav className="col col-span-2">
-						<SpaceXFilter
-							filterData={this.state.filterData}
-							filterHandler={this.filterHandler}
-						/>
-					</nav>
+				<div className="row">
+					<div className="column col-span-3">
+						<div className="row">
+							<div className="column">
+								<div className="right-cards">
+									<SpaceXFilter
+										filterData={this.state.filterData}
+										filterHandler={this.filterHandler}
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className="column col-span-9">
+						<div className="row">
+							{" "}
+							{this.props.launchData.launchLoading ? (
+								<Loader />
+							) : (
+								<SpaceXCardDetails launches={this.state.launchData} />
+							)}
+						</div>
+					</div>
 				</div>
 				<footer>
 					<p className="footer-text">
 						Developed By:<span>{this.state.footer}</span>
 					</p>
 				</footer>
-			</div>
+			</Fragment>
 		);
 	}
 }

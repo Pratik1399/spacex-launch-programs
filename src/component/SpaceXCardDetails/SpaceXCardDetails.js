@@ -1,12 +1,53 @@
-import React from "react";
-import SpaceXCard from "../SpaceXCard/SpaceXCard.js";
+import React, { Fragment, Component } from "react";
+import MissionId from "./MissionId";
+import LandSuccessButton from "./LandSuccessButton";
 
-const SpaceXCardDetails = (props) => (
-	<div className="row nested">
-		{props.launches.map((launchDetails) => (
-			<SpaceXCard launchDetails={launchDetails} />
-		))}
-	</div>
-);
+class SpaceXCardDetails extends Component {
+	render() {
+		return (
+			<Fragment>
+				{this.props.launches.map((launchDetails) => (
+					<div className="column col-span-3 col-span-6">
+						<div className="left-cards" key={launchDetails.flight_number}>
+							{launchDetails.links.mission_patch_small ? (
+								<img
+									className="card-height"
+									alt="image_not_found"
+									src={launchDetails.links.mission_patch_small}
+								/>
+							) : (
+								<div className="no-image-found">
+									<p>Image Not Found</p>{" "}
+								</div>
+							)}
+							<div className="text-container">
+								<p className="head">
+									{launchDetails.mission_name} #{launchDetails.flight_number}
+								</p>
+								<div className="text-mission">
+									Mission Ids:
+									<MissionId missionId={launchDetails.mission_id} />
+								</div>
+								<p>
+									Launch Year: <span>{launchDetails.launch_year}</span>
+								</p>
+								<p>
+									Successful Launch:{" "}
+									<span>{launchDetails.launch_success ? "true" : "false"}</span>
+								</p>
+								<p>
+									Successful Landing:
+									<LandSuccessButton
+										landSuccess={launchDetails.rocket.first_stage.cores}
+									/>
+								</p>
+							</div>
+						</div>
+					</div>
+				))}
+			</Fragment>
+		);
+	}
+}
 
 export default SpaceXCardDetails;

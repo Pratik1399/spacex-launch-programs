@@ -5,7 +5,7 @@ import { Router } from "react-router";
 import { Provider } from "react-redux";
 import { createStore, compose, applyMiddleware } from "redux";
 import createSagaMiddleware from "redux-saga";
-import createHistory from "history/createBrowserHistory";
+import history from "./history";
 import SpaceLaunch from "./container/SpaceLaunch/SpaceLaunch";
 import sagas from "./store/sagas/sagas";
 import createRootReducers from "./store/reducers/reducers";
@@ -23,7 +23,6 @@ export const Store = (history, initialState = {}) => {
 	return store;
 };
 
-const history = createHistory();
 const store = Store(history);
 
 ReactDOM.render(

@@ -4,7 +4,7 @@
 
 ## Get Started
 
-> Node : v11.5.0
+> Node : v11.5.0,
 > npm : v6.7.0
 
 ```bash
