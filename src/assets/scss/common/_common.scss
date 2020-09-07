@@ -7,14 +7,19 @@
 body {
 	font-size: 62.5%;
 	font-family: "Open Sans", sans-serif;
-	min-height: 100vh;
 	background-color: #f2f2f2;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
 }
 
 header,
 footer {
 	h1 {
-		padding: 0 1rem;
+		padding-top: 0.8rem;
+		padding-bottom: 0;
+		padding-left: 2rem;
+		padding-right: 0;
 	}
 }
 
@@ -22,14 +27,19 @@ footer {
 	text-align: center;
 	font-size: 1rem;
 	font-weight: bold;
-	padding: 3rem;
+	/* padding: 1.5rem 0; */
+	padding-top: 0.8rem;
+	padding-bottom: 0;
+	padding-left: 2rem;
+	padding-right: 0;
+
 	span {
 		font-weight: 300;
 	}
 }
 
 .text-mission {
-	font-size: 1rem;
+	font-size: 0.79rem;
 	font-weight: bold;
 	margin: 0.5rem 0;
 	ul {
@@ -39,10 +49,4 @@ footer {
 			font-weight: 200;
 		}
 	}
-}
-
-.years-row {
-	justify-content: flex-start;
-	max-width: 80%;
-	margin: 0 4rem;
 }

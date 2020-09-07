@@ -53,27 +53,29 @@ class SpaceLaunch extends React.Component {
 				<header>
 					<h1>SpaceX Launch Programs</h1>
 				</header>
-				<div className="row">
-					<div className="column col-span-3">
-						<div className="row">
-							<div className="column">
-								<div className="right-cards">
-									<SpaceXFilter
-										filterData={this.state.filterData}
-										filterHandler={this.filterHandler}
-									/>
+				<div className="main">
+					<div className="row">
+						<div className="column col-span-3">
+							<div className="row ">
+								<div className="column">
+									<div className="cards">
+										<SpaceXFilter
+											filterData={this.state.filterData}
+											filterHandler={this.filterHandler}
+										/>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div className="column col-span-9">
-						<div className="row">
-							{" "}
-							{this.props.launchData.launchLoading ? (
-								<Loader />
-							) : (
-								<SpaceXCardDetails launches={this.state.launchData} />
-							)}
+						<div className="column col-span-9">
+							<div className="row right-cards">
+								{" "}
+								{this.props.launchData.launchLoading ? (
+									<Loader />
+								) : (
+									<SpaceXCardDetails launches={this.state.launchData} />
+								)}
+							</div>
 						</div>
 					</div>
 				</div>

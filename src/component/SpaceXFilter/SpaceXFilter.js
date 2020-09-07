@@ -15,7 +15,10 @@ class SpaceXFilter extends Component {
 						{Array(15)
 							.fill(null)
 							.map((__, index) => (
-								<div className="column col-span-6" key={index + 2006}>
+								<div
+									className="column col-span-6 col-span-2"
+									key={index + 2006}
+								>
 									<SpaceXButton
 										isSelected={
 											this.props.filterData.launch_year ===
@@ -50,7 +53,7 @@ class SpaceXFilter extends Component {
 								filterType: "launch_success",
 							},
 						].map((value, index) => (
-							<div className="column col-span-6" key={index}>
+							<div className="column col-span-6 col-span-2" key={index}>
 								<SpaceXButton
 									isSelected={
 										this.props.filterData.launch_success === value.checkText
@@ -77,7 +80,7 @@ class SpaceXFilter extends Component {
 								filterType: "land_success",
 							},
 						].map((value, index) => (
-							<div className="column col-span-6" key={index}>
+							<div className="column col-span-6 col-span-2" key={index}>
 								<SpaceXButton
 									isSelected={
 										this.props.filterData.land_success === value.checkText

@@ -10,7 +10,7 @@ class MissionId extends Component {
 		return (
 			<Fragment>
 				<ul>
-					<li>{missionList}</li>
+					<li>{missionList[0]}</li>
 				</ul>
 			</Fragment>
 		);

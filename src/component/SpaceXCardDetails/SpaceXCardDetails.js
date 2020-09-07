@@ -7,8 +7,8 @@ class SpaceXCardDetails extends Component {
 		return (
 			<Fragment>
 				{this.props.launches.map((launchDetails) => (
-					<div className="column col-span-3 col-span-6">
-						<div className="left-cards" key={launchDetails.flight_number}>
+					<div className="column col-span-3 ">
+						<div className="cards" key={launchDetails.flight_number}>
 							{launchDetails.links.mission_patch_small ? (
 								<img
 									className="card-height"
