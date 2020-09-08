@@ -4,7 +4,7 @@ import LandSuccessButton from "./LandSuccessButton";
 
 class SpaceXCardDetails extends Component {
 	render() {
-		console.log(this.props);
+		console.log(this.props.launches.length);
 		return (
 			<Fragment>
 				{this.props.launches.map((launchDetails) => (
@@ -25,10 +25,8 @@ class SpaceXCardDetails extends Component {
 								</div>
 							)}
 							<div className="text-container">
-								<p className="head">
-									{launchDetails.mission_name} #{launchDetails.flight_number}
-								</p>
-
+								<p className="head">{launchDetails.mission_name}</p>
+								<p className="head">#{launchDetails.flight_number}</p>
 								<div className="text-mission">
 									Mission Ids:
 									<MissionId missionId={launchDetails.mission_id} />

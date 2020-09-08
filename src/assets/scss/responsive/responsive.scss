@@ -360,6 +360,21 @@
 		padding: 0;
 		margin: 4rem auto 1rem auto;
 	}
+	.year-card {
+		height: auto;
+	}
+	.detail-card {
+		height: 22rem;
+		.card-height {
+			height: auto;
+		}
+		.no-image-found {
+			height: auto;
+			p {
+				padding: 4.2rem 0;
+			}
+		}
+	}
 }
 
 // @media only screen and (min-width: 812px) {
@@ -419,6 +434,21 @@
 		padding: 0;
 		margin: 4rem auto 1rem auto;
 	}
+	.year-card {
+		height: auto;
+	}
+	.detail-card {
+		height: 24rem;
+		.card-height {
+			height: auto;
+		}
+		.no-image-found {
+			height: auto;
+			p {
+				padding: 5.4rem 0;
+			}
+		}
+	}
 }
 
 // @media only screen and (min-width: 800px) {
@@ -471,6 +501,21 @@
 	.footer-text {
 		padding: 0;
 		margin: 4rem auto 1rem auto;
+	}
+	.year-card {
+		height: auto;
+	}
+	.detail-card {
+		height: 25rem;
+		.card-height {
+			height: auto;
+		}
+		.no-image-found {
+			height: auto;
+			p {
+				padding: 6rem 0;
+			}
+		}
 	}
 }
 
@@ -536,15 +581,30 @@
 	}
 	.text-container {
 		p {
-			font-size: 0.78rem;
+			font-size: 0.9rem;
 		}
 		.text-mission {
-			font-size: 0.78rem;
+			font-size: 0.9rem;
 		}
 	}
 	.footer-text {
 		padding: 0;
 		margin: 4rem auto 1rem auto;
+	}
+	.year-card {
+		height: auto;
+	}
+	.detail-card {
+		height: 27rem;
+		.card-height {
+			height: auto;
+		}
+		.no-image-found {
+			height: auto;
+			p {
+				padding: 6rem 0;
+			}
+		}
 	}
 }
 
@@ -584,15 +644,30 @@
 	}
 	.text-container {
 		p {
-			font-size: 0.78rem;
+			font-size: 0.76rem;
 		}
 		.text-mission {
-			font-size: 0.78rem;
+			font-size: 0.76rem;
 		}
 	}
 	.footer-text {
 		padding: 0;
 		margin: 4rem auto 1rem auto;
+	}
+	.year-card {
+		height: auto;
+	}
+	.detail-card {
+		height: 22rem;
+		.card-height {
+			height: auto;
+		}
+		.no-image-found {
+			height: auto;
+			p {
+				padding: 3.7rem 0;
+			}
+		}
 	}
 }
 
@@ -641,6 +716,22 @@
 	.footer-text {
 		padding: 0;
 		margin: 4rem auto 1rem auto;
+	}
+
+	.year-card {
+		height: auto;
+	}
+	.detail-card {
+		height: 24rem;
+		.card-height {
+			height: auto;
+		}
+		.no-image-found {
+			height: auto;
+			p {
+				padding: 4.8rem 0;
+			}
+		}
 	}
 }
 
@@ -691,6 +782,22 @@
 		padding: 0;
 		margin: 4rem auto 1rem auto;
 	}
+	.year-card {
+		height: auto;
+	}
+
+	.detail-card {
+		height: 26rem;
+		.card-height {
+			height: auto;
+		}
+		.no-image-found {
+			height: auto;
+			p {
+				padding: 6.1rem 0;
+			}
+		}
+	}
 }
 
 @media only screen and (min-width: 1441px) {
@@ -698,6 +805,23 @@
 		overflow: auto;
 		max-width: 80%;
 		margin: 0 auto;
+	}
+
+	.year-card {
+		height: auto;
+	}
+
+	.detail-card {
+		height: 21rem;
+		.card-height {
+			height: auto;
+		}
+		.no-image-found {
+			height: auto;
+			p {
+				padding: 4.6rem 0;
+			}
+		}
 	}
 	.row {
 		display: flex;
@@ -728,10 +852,10 @@
 	}
 	.text-container {
 		p {
-			font-size: 0.78rem;
+			font-size: 0.66rem;
 		}
 		.text-mission {
-			font-size: 0.78rem;
+			font-size: 0.66rem;
 		}
 	}
 	.footer-text {
