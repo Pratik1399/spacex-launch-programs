@@ -16,7 +16,7 @@ class SpaceLaunch extends React.Component {
 				launch_success: "",
 				land_success: "",
 			},
-			footer: "{developer name}",
+			footer: "Pratik Ghadge",
 		};
 	}
 

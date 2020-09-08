@@ -3,11 +3,10 @@
 
 @media only screen and (min-width: 320px) {
 	body {
-		overflow: scroll;
+		overflow: auto;
 	}
 	.main {
 		max-width: 100%;
-		overflow: hidden;
 	}
 	.row {
 		display: flex;
@@ -42,11 +41,10 @@
 
 @media only screen and (min-width: 360px) {
 	body {
-		overflow: scroll;
+		overflow: auto;
 	}
 	.main {
 		max-width: 100%;
-		overflow: hidden;
 	}
 	.row {
 		display: flex;
@@ -85,11 +83,10 @@
 
 @media only screen and (min-width: 375px) {
 	body {
-		overflow: scroll;
+		overflow: auto;
 	}
 	.main {
 		max-width: 100%;
-		overflow: hidden;
 	}
 	.row {
 		display: flex;
@@ -127,11 +124,10 @@
 
 @media only screen and (min-width: 414px) {
 	body {
-		overflow: scroll;
+		overflow: auto;
 	}
 	.main {
 		max-width: 100%;
-		overflow: hidden;
 	}
 	.row {
 		display: flex;
@@ -169,11 +165,10 @@
 
 @media only screen and (min-width: 480px) {
 	body {
-		overflow: scroll;
+		overflow: auto;
 	}
 	.main {
 		max-width: 100%;
-		overflow: hidden;
 	}
 	.row {
 		display: flex;
@@ -211,11 +206,10 @@
 
 @media only screen and (min-width: 568px) {
 	body {
-		overflow: scroll;
+		overflow: auto;
 	}
 	.main {
 		max-width: 100%;
-		overflow: hidden;
 	}
 	.row {
 		display: flex;
@@ -253,11 +247,10 @@
 
 @media only screen and (min-width: 667px) {
 	body {
-		overflow: scroll;
+		overflow: auto;
 	}
 	.main {
 		max-width: 100%;
-		overflow: hidden;
 	}
 	.row {
 		display: flex;
@@ -296,11 +289,10 @@
 //required
 @media only screen and (min-width: 698px) {
 	body {
-		overflow: scroll;
+		overflow: auto;
 	}
 	.main {
 		max-width: 100%;
-		overflow: hidden;
 	}
 	.row {
 		display: flex;
@@ -338,7 +330,7 @@
 
 @media only screen and (min-width: 701px) {
 	body {
-		overflow: scroll;
+		overflow: auto;
 	}
 	.main {
 		max-width: 100%;
@@ -393,7 +385,7 @@
 
 @media only screen and (min-width: 768px) {
 	body {
-		overflow: scroll;
+		overflow: auto;
 	}
 	.main {
 		max-width: 100%;
@@ -442,7 +434,7 @@
 
 @media only screen and (min-width: 834px) {
 	body {
-		overflow: scroll;
+		overflow: auto;
 	}
 	.main {
 		max-width: 100%;
@@ -512,7 +504,7 @@
 /*Requirement*/
 @media only screen and (min-width: 1022px) {
 	body {
-		overflow: scroll;
+		overflow: auto;
 	}
 	.main {
 		max-width: 100%;
@@ -558,7 +550,7 @@
 
 @media only screen and (min-width: 1024px) {
 	body {
-		overflow: scroll;
+		overflow: auto;
 	}
 	.main {
 		max-width: 100%;
@@ -602,7 +594,7 @@
 
 @media only screen and (min-width: 1200px) {
 	body {
-		overflow: scroll;
+		overflow: auto;
 	}
 	.main {
 		max-width: 100%;
@@ -647,7 +639,7 @@
 /*Requirement*/
 @media only screen and (min-width: 1438px) {
 	body {
-		overflow: scroll;
+		overflow: auto;
 	}
 	.main {
 		max-width: 100%;
@@ -691,7 +683,7 @@
 
 @media only screen and (min-width: 1441px) {
 	body {
-		overflow: scroll;
+		overflow: auto;
 		max-width: 80%;
 		margin: 0 auto;
 	}
