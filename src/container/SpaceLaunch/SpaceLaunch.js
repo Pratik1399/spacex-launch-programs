@@ -55,10 +55,10 @@ class SpaceLaunch extends React.Component {
 				</header>
 				<div className="main">
 					<div className="row">
-						<div className="column col-span-3">
+						<div className="column col-span-3 col-span-5">
 							<div className="row ">
 								<div className="column">
-									<div className="cards">
+									<div className="cards year-card">
 										<SpaceXFilter
 											filterData={this.state.filterData}
 											filterHandler={this.filterHandler}
@@ -67,7 +67,7 @@ class SpaceLaunch extends React.Component {
 								</div>
 							</div>
 						</div>
-						<div className="column col-span-9">
+						<div className="column col-span-9 col-span-7">
 							<div className="row right-cards">
 								{" "}
 								{this.props.launchData.launchLoading ? (

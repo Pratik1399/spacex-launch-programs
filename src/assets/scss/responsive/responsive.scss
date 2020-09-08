@@ -1,126 +1,736 @@
-@media screen and (max-width: 1920px) {
-	.main {
-		max-width: 1440px;
-		height: 90vh;
-		overflow: hidden;
-	}
+/*Smart Phones */
+/* ----------- IPhone 4,4S,5,5S,5C,5SE,6,6+,6S,7,7+,8,8+,X. Galaxy S3,S4,S5,S6,Note 3. Google Pixel,XL ,HTC One ,Windows Phone----------- */
 
-	.right-cards {
-		overflow: hidden;
-	}
-
-	.row {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-
-	.col-span-6 {
-		flex-basis: 50%;
-	}
-	.col-span-3 {
-		flex-basis: 25%;
-	}
-
-	.col-span-9 {
-		flex-basis: 75%;
-	}
-}
-
-@media screen and (max-width: 1440px) {
-	.main {
-		max-width: 1440px;
-		height: 90vh;
-		overflow: hidden;
-	}
-
-	.right-cards {
-		overflow: hidden;
-	}
-
-	.row {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-
-	.col-span-3 {
-		flex-basis: 25%;
-	}
-
-	.col-span-6 {
-		flex-basis: 50%;
-	}
-
-	.col-span-9 {
-		flex-basis: 75%;
-	}
-}
-
-@media screen and (max-width: 1024px) {
-	.main {
-		height: 74vh;
-	}
-	.row {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-
-	.col-span-3 {
-		flex-basis: 50%;
-	}
-	.col-span-6 {
-		flex-basis: 50%;
-	}
-
-	.col-span-9 {
-		flex-basis: 50%;
-	}
-	.primary-button,
-	.secondary-button {
-		margin: 0 1rem;
-	}
-}
-
-@media screen and (max-width: 700px) {
+@media only screen and (min-width: 320px) {
 	body {
 		overflow: scroll;
 	}
 	.main {
-		height: auto;
-	}
-
-	.right-cards {
+		max-width: 100%;
 		overflow: hidden;
 	}
 	.row {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		flex-wrap: wrap;
 	}
-
-	.col-span-3 {
+	.row-years {
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 		flex-basis: 100%;
 	}
-
 	.col-span-6 {
 		flex-basis: 50%;
-	}
-
-	.col-span-9 {
-		flex-basis: 100%;
-	}
-	.text-mission {
-		font-size: 1rem;
 	}
 	.text-container {
 		p {
 			font-size: 1rem;
 		}
+		.text-mission {
+			font-size: 1rem;
+		}
+	}
+	.footer-text {
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media only screen and (min-width: 360px) {
+	body {
+		overflow: scroll;
+	}
+	.main {
+		max-width: 100%;
+		overflow: hidden;
+	}
+	.row {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.row-years {
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+	}
+
+	.right-cards {
+		flex-wrap: nowrap;
+	}
+	.col-span-6 {
+		flex-basis: 50%;
+	}
+	.text-container {
+		p {
+			font-size: 1rem;
+		}
+		.text-mission {
+			font-size: 1rem;
+		}
+	}
+	.footer-text {
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media only screen and (min-width: 375px) {
+	body {
+		overflow: scroll;
+	}
+	.main {
+		max-width: 100%;
+		overflow: hidden;
+	}
+	.row {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.row-years {
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+	}
+	.right-cards {
+		flex-wrap: nowrap;
+	}
+	.col-span-6 {
+		flex-basis: 50%;
+	}
+	.text-container {
+		p {
+			font-size: 1rem;
+		}
+		.text-mission {
+			font-size: 1rem;
+		}
+	}
+	.footer-text {
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media only screen and (min-width: 414px) {
+	body {
+		overflow: scroll;
+	}
+	.main {
+		max-width: 100%;
+		overflow: hidden;
+	}
+	.row {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.right-cards {
+		flex-wrap: nowrap;
+	}
+	.row-years {
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+	}
+	.col-span-6 {
+		flex-basis: 50%;
+	}
+	.text-container {
+		p {
+			font-size: 1rem;
+		}
+		.text-mission {
+			font-size: 1rem;
+		}
+	}
+	.footer-text {
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	body {
+		overflow: scroll;
+	}
+	.main {
+		max-width: 100%;
+		overflow: hidden;
+	}
+	.row {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.row-years {
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+	}
+	.right-cards {
+		flex-wrap: nowrap;
+	}
+	.col-span-6 {
+		flex-basis: 50%;
+	}
+	.text-container {
+		p {
+			font-size: 1rem;
+		}
+		.text-mission {
+			font-size: 1rem;
+		}
+	}
+	.footer-text {
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media only screen and (min-width: 568px) {
+	body {
+		overflow: scroll;
+	}
+	.main {
+		max-width: 100%;
+		overflow: hidden;
+	}
+	.row {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.row-years {
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+	}
+	.right-cards {
+		flex-wrap: nowrap;
+	}
+	.col-span-6 {
+		flex-basis: 50%;
+	}
+	.text-container {
+		p {
+			font-size: 1rem;
+		}
+		.text-mission {
+			font-size: 1rem;
+		}
+	}
+	.footer-text {
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media only screen and (min-width: 667px) {
+	body {
+		overflow: scroll;
+	}
+	.main {
+		max-width: 100%;
+		overflow: hidden;
+	}
+	.row {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.row-years {
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+	}
+	.right-cards {
+		flex-wrap: nowrap;
+	}
+	.col-span-6 {
+		flex-basis: 50%;
+	}
+	.text-container {
+		p {
+			font-size: 1rem;
+		}
+		.text-mission {
+			font-size: 1rem;
+		}
+	}
+	.footer-text {
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+//required
+@media only screen and (min-width: 698px) {
+	body {
+		overflow: scroll;
+	}
+	.main {
+		max-width: 100%;
+		overflow: hidden;
+	}
+	.row {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.row-years {
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+	}
+	.right-cards {
+		flex-wrap: nowrap;
+	}
+	.col-span-6 {
+		flex-basis: 50%;
+	}
+	.text-container {
+		p {
+			font-size: 1rem;
+		}
+		.text-mission {
+			font-size: 1rem;
+		}
+	}
+	.footer-text {
+		padding-top: 0.8rem;
+		padding-bottom: 0.8rem;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media only screen and (min-width: 701px) {
+	body {
+		overflow: scroll;
+	}
+	.main {
+		max-width: 100%;
+	}
+	.row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.col-span-5 {
+		flex-basis: 42%;
+	}
+	.col-span-6 {
+		flex-basis: 50%;
+	}
+
+	.col-span-4 {
+		flex-basis: 50%;
+	}
+	.col-span-7 {
+		flex-basis: 58%;
 	}
 	.primary-button,
 	.secondary-button {
-		margin: 0 0.5rem;
+		font-size: 0.8rem;
+	}
+	.row-years {
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+	}
+	.text-container {
+		p {
+			font-size: 0.78rem;
+		}
+		.text-mission {
+			font-size: 0.78rem;
+		}
 	}
 }
+
+// @media only screen and (min-width: 812px) {
+// }
+
+/*Tablets*/
+/* ----------- IPad 1,2,3,4,Mini,Air,Pro 9.7,Pro 10.5,Pro 12.9. Galaxy Tab 2,S.Nexus 7,9. Kindle Fire HD 7,8.9 ----------- */
+
+// @media only screen and (min-width: 601px) {
+// }
+
+@media only screen and (min-width: 768px) {
+	body {
+		overflow: scroll;
+	}
+	.main {
+		max-width: 100%;
+	}
+	.row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.col-span-5 {
+		flex-basis: 42%;
+	}
+	.col-span-6 {
+		flex-basis: 50%;
+	}
+
+	.col-span-4 {
+		flex-basis: 50%;
+	}
+	.col-span-7 {
+		flex-basis: 58%;
+	}
+	.primary-button,
+	.secondary-button {
+		font-size: 0.8rem;
+	}
+	.row-years {
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+	}
+	.text-container {
+		p {
+			font-size: 0.78rem;
+		}
+		.text-mission {
+			font-size: 0.78rem;
+		}
+	}
+}
+
+// @media only screen and (min-width: 800px) {
+// }
+
+@media only screen and (min-width: 834px) {
+	body {
+		overflow: scroll;
+	}
+	.main {
+		max-width: 100%;
+	}
+	.row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.col-span-5 {
+		flex-basis: 42%;
+	}
+	.col-span-6 {
+		flex-basis: 50%;
+	}
+
+	.col-span-4 {
+		flex-basis: 50%;
+	}
+	.col-span-7 {
+		flex-basis: 58%;
+	}
+	.primary-button,
+	.secondary-button {
+		font-size: 0.8rem;
+	}
+	.row-years {
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+	}
+	.text-container {
+		p {
+			font-size: 0.78rem;
+		}
+		.text-mission {
+			font-size: 0.78rem;
+		}
+	}
+}
+
+// @media only screen and (min-width: 1024px) {
+// }
+
+// @media only screen and (min-width: 1112px) {
+// }
+
+// @media only screen and (min-width: 1200px) {
+// }
+
+// @media only screen and (min-width: 1280px) {
+// }
+
+// @media only screen and (min-width: 1366px) {
+// }
+
+// @media only screen and (min-width: 1536px) {
+// }
+
+// @media only screen and (min-width: 1600px) {
+// }
+
+/*Laptops*/
+
+/*Requirement*/
+@media only screen and (min-width: 1022px) {
+	body {
+		overflow: scroll;
+	}
+	.main {
+		max-width: 100%;
+	}
+	.row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.col-span-5 {
+		flex-basis: 42%;
+	}
+	.col-span-6 {
+		flex-basis: 50%;
+	}
+
+	.col-span-4 {
+		flex-basis: 50%;
+	}
+	.col-span-7 {
+		flex-basis: 58%;
+	}
+	.primary-button,
+	.secondary-button {
+		font-size: 0.8rem;
+	}
+	.row-years {
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+	}
+	.text-container {
+		p {
+			font-size: 0.78rem;
+		}
+		.text-mission {
+			font-size: 0.78rem;
+		}
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	body {
+		overflow: scroll;
+	}
+	.main {
+		max-width: 100%;
+	}
+	.row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.col-span-3 {
+		flex-basis: 25%;
+	}
+	.col-span-6 {
+		flex-basis: 50%;
+	}
+
+	.col-span-9 {
+		flex-basis: 75%;
+	}
+	.primary-button,
+	.secondary-button {
+		font-size: 0.8rem;
+		padding: 0.5rem 1.4rem;
+	}
+	.row-years {
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+	}
+	.text-container {
+		p {
+			font-size: 0.78rem;
+		}
+		.text-mission {
+			font-size: 0.78rem;
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	body {
+		overflow: scroll;
+	}
+	.main {
+		max-width: 100%;
+	}
+	.row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.col-span-3 {
+		flex-basis: 25%;
+	}
+	.col-span-6 {
+		flex-basis: 50%;
+	}
+
+	.col-span-9 {
+		flex-basis: 75%;
+	}
+	.primary-button,
+	.secondary-button {
+		font-size: 0.8rem;
+		padding: 0.5rem 1.5rem;
+	}
+	.row-years {
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+	}
+	.text-container {
+		p {
+			font-size: 0.78rem;
+		}
+		.text-mission {
+			font-size: 0.78rem;
+		}
+	}
+}
+
+/*Requirement*/
+@media only screen and (min-width: 1438px) {
+	body {
+		overflow: scroll;
+	}
+	.main {
+		max-width: 100%;
+	}
+	.row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.col-span-3 {
+		flex-basis: 25%;
+	}
+	.col-span-6 {
+		flex-basis: 50%;
+	}
+
+	.col-span-9 {
+		flex-basis: 75%;
+	}
+	.primary-button,
+	.secondary-button {
+		font-size: 0.8rem;
+		padding: 0.5rem 1.5rem;
+	}
+	.row-years {
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+	}
+	.text-container {
+		p {
+			font-size: 0.78rem;
+		}
+		.text-mission {
+			font-size: 0.78rem;
+		}
+	}
+}
+
+@media only screen and (min-width: 1441px) {
+	body {
+		overflow: scroll;
+		max-width: 80%;
+		margin: 0 auto;
+	}
+	.row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.col-span-3 {
+		flex-basis: 25%;
+	}
+	.col-span-6 {
+		flex-basis: 50%;
+	}
+
+	.col-span-9 {
+		flex-basis: 75%;
+	}
+	.primary-button,
+	.secondary-button {
+		font-size: 0.8rem;
+		padding: 0.5rem 1.5rem;
+	}
+	.row-years {
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+	}
+	.text-container {
+		p {
+			font-size: 0.78rem;
+		}
+		.text-mission {
+			font-size: 0.78rem;
+		}
+	}
+}
+
+// @media only screen and (min-width: 1600px) {
+// }

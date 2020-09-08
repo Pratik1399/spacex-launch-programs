@@ -4,11 +4,15 @@ import LandSuccessButton from "./LandSuccessButton";
 
 class SpaceXCardDetails extends Component {
 	render() {
+		console.log(this.props);
 		return (
 			<Fragment>
 				{this.props.launches.map((launchDetails) => (
-					<div className="column col-span-3 ">
-						<div className="cards" key={launchDetails.flight_number}>
+					<div className="column col-span-3 col-span-4">
+						<div
+							className="cards detail-card"
+							key={launchDetails.flight_number}
+						>
 							{launchDetails.links.mission_patch_small ? (
 								<img
 									className="card-height"
@@ -24,6 +28,7 @@ class SpaceXCardDetails extends Component {
 								<p className="head">
 									{launchDetails.mission_name} #{launchDetails.flight_number}
 								</p>
+
 								<div className="text-mission">
 									Mission Ids:
 									<MissionId missionId={launchDetails.mission_id} />

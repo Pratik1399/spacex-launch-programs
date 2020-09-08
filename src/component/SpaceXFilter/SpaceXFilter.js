@@ -11,88 +11,97 @@ class SpaceXFilter extends Component {
 						<p>Launch Year</p>
 						<hr />
 					</div>
-					<div className="row years-row">
-						{Array(15)
-							.fill(null)
-							.map((__, index) => (
-								<div
-									className="column col-span-6 col-span-2"
-									key={index + 2006}
-								>
-									<SpaceXButton
-										isSelected={
-											this.props.filterData.launch_year ===
-											(index + 2006).toString()
-										}
-										onClick={() =>
-											this.props.filterHandler(
-												"launch_year",
+					<div className="row ">
+						<div className="row-years">
+							{Array(15)
+								.fill(null)
+								.map((__, index) => (
+									<div className="column col-span-6" key={index + 2006}>
+										<SpaceXButton
+											isSelected={
+												this.props.filterData.launch_year ===
 												(index + 2006).toString()
-											)
-										}
-									>
-										{index + 2006}
-									</SpaceXButton>
-								</div>
-							))}
+											}
+											onClick={() =>
+												this.props.filterHandler(
+													"launch_year",
+													(index + 2006).toString()
+												)
+											}
+										>
+											{index + 2006}
+										</SpaceXButton>
+									</div>
+								))}
+						</div>
 					</div>
 					<div className="filter-text">
 						<p>Successful Launch</p>
 						<hr />
 					</div>
-					<div className="row years-row">
-						{[
-							{
-								text: "True",
-								checkText: "true",
-								filterType: "launch_success",
-							},
-							{
-								text: "False",
-								checkText: "false",
-								filterType: "launch_success",
-							},
-						].map((value, index) => (
-							<div className="column col-span-6 col-span-2" key={index}>
-								<SpaceXButton
-									isSelected={
-										this.props.filterData.launch_success === value.checkText
-									}
-									onClick={() =>
-										this.props.filterHandler(value.filterType, value.checkText)
-									}
-								>
-									{value.text}
-								</SpaceXButton>
-							</div>
-						))}
-					</div>
+					<div className="row ">
+						<div className="row-years">
+							{[
+								{
+									text: "True",
+									checkText: "true",
+									filterType: "launch_success",
+								},
+								{
+									text: "False",
+									checkText: "false",
+									filterType: "launch_success",
+								},
+							].map((value, index) => (
+								<div className="column col-span-6" key={index}>
+									<SpaceXButton
+										isSelected={
+											this.props.filterData.launch_success === value.checkText
+										}
+										onClick={() =>
+											this.props.filterHandler(
+												value.filterType,
+												value.checkText
+											)
+										}
+									>
+										{value.text}
+									</SpaceXButton>
+								</div>
+							))}
+						</div>
+					</div>{" "}
 					<div className="filter-text">
 						<p>Successful Landing</p>
 						<hr />
 					</div>
-					<div className="row years-row">
-						{[
-							{ text: "True", checkText: "true", filterType: "land_success" },
-							{
-								text: "False",
-								checkText: "false",
-								filterType: "land_success",
-							},
-						].map((value, index) => (
-							<div className="column col-span-6 col-span-2" key={index}>
-								<SpaceXButton
-									isSelected={
-										this.props.filterData.land_success === value.checkText
-									}
-									onClick={() =>
-										this.props.filterHandler(value.filterType, value.checkText)
-									}
-								>
-									{value.text}
-								</SpaceXButton>
-							</div>
-						))}
+					<div className="row ">
+						<div className="row-years">
+							{[
+								{ text: "True", checkText: "true", filterType: "land_success" },
+								{
+									text: "False",
+									checkText: "false",
+									filterType: "land_success",
+								},
+							].map((value, index) => (
+								<div className="column col-span-6" key={index}>
+									<SpaceXButton
+										isSelected={
+											this.props.filterData.land_success === value.checkText
+										}
+										onClick={() =>
+											this.props.filterHandler(
+												value.filterType,
+												value.checkText
+											)
+										}
+									>
+										{value.text}
+									</SpaceXButton>
+								</div>
+							))}
+						</div>
 					</div>
 				</div>
 			</Fragment>
